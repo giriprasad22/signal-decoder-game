@@ -1,0 +1,213 @@
+.game-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(30, 41, 59, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+/* Game Info */
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(15, 23, 42, 0.5);
+  border-radius: 10px;
+}
+
+.level-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.progress {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.score-info .score {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--flash-color);
+}
+
+/* Status Bar */
+.status-bar {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.status-message {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+}
+
+.btn-hint {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.btn-hint:hover:not(:disabled) {
+  background: linear-gradient(135deg, #d97706, #b45309);
+}
+
+/* Hint Box */
+.hint-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(245, 158, 11, 0.1);
+  border: 2px solid rgba(245, 158, 11, 0.3);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hint-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--flash-color);
+}
+
+.hint-box p:last-child {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+/* Completion Screen */
+.completion-screen {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.completion-screen h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--success-color);
+}
+
+.completion-screen p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.final-score {
+  font-size: 2rem !important;
+  font-weight: 700;
+  color: var(--flash-color);
+  margin: 1.5rem 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .game-container {
+    padding: 1rem;
+  }
+  
+  .game-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .game-info {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .level-info h2 {
+    font-size: 1.2rem;
+  }
+  
+  .controls {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
