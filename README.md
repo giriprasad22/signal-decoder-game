@@ -216,14 +216,6 @@ Ensure you're using Node.js v18 or higher:
 node --version
 ```
 
-## 📄 License
-
-This project is created as an assignment submission.
-
-## 👤 Author
-
-Created for Frontend Assignment - Signal Decoder Game
-
----
 
 **Enjoy the game! 🎮**
+
